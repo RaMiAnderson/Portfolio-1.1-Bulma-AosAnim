@@ -66,6 +66,59 @@
     display: none;
 }
 
+/* Main */
+main.main{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.main .mainContainer{
+    width: 90%;
+}
+.main .mainContainer .landing{
+    width: 100%;
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main .mainContainer .landing .soratra{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.main .mainContainer .landing .soratra div{
+    margin-bottom: 4%;
+}
+.main .mainContainer .landing .soratra h2{
+    font-size: 45px;
+    font-weight: 400;
+    /* font-family: 'Karla', sans-serif; */
+    font-family: 'Red Hat Display', sans-serif;
+}
+.main .mainContainer .landing .soratra h1{
+    font-size: 55px;
+    font-weight: 500;
+    color: var(--colorthemeDur);
+    /* font-family: 'Karla', sans-serif; */
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+.main .mainContainer .landing .Landing-btn a button .soratraNavBtn{
+    margin-top: 3px;
+}
+
+.main .mainContainer .landing .sary{
+    width: 50%;
+    display: flex;
+    justify-content: end;
+}
+.main .mainContainer .landing img{
+    width: 100%;
+}
+
+
 @media screen and (max-width: 1175px) {
     body{
         padding: 0 !important;
@@ -101,5 +154,58 @@
         align-items: center;
         width: 100%;
         height: 100%;
+    }
+}
+@media screen and (max-width: 1023px) {
+   
+    .main .mainContainer .landing{
+        width: 100%;
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .main .mainContainer .landing .soratra{
+        width: 100%;
+        margin-top: 20px;
+    }
+    .main .mainContainer .landing .soratra div{
+        margin-bottom: 2%;
+    }
+    .main .mainContainer .landing .soratra h2{
+        font-size: 35px;
+    }
+    .main .mainContainer .landing .soratra h1{
+        font-size: 45px;
+    }
+    .main .mainContainer .landing .sary{
+        width: 60%;
+        display: flex;
+        justify-content: end;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .main .mainContainer .landing .sary{
+        width: 70%;
+    }
+}
+@media screen and (max-width: 435px) {
+    .main .mainContainer .landing .soratra div{
+        margin-bottom: 3%;
+    }
+    .main .mainContainer .landing .soratra h2{
+        font-size: 25px;
+    }
+    .main .mainContainer .landing .soratra h1{
+        font-size: 35px;
+    }
+    .main .mainContainer .landing .sary{
+        width: 75%;
+    }
+}
+@media screen and (max-width: 324px) {
+    .main .mainContainer .landing .sary{
+        width: 80%;
     }
 }
