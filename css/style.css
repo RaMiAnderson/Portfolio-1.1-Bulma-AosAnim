@@ -10,7 +10,7 @@
 }
 .espace-nav{
     margin-left: 20px;
-}
+} 
 .section-Navigation{
     margin-left: 50px;
 }
@@ -31,7 +31,7 @@
     border-radius: 10px;
     font-size: 0.9rem;
     cursor: pointer;
-    z-index: 0;
+    z-index: 10;
     overflow: hidden;
     box-shadow:   0 2px 15px #1e99feab;
     /* background: linear-gradient(180deg, #60dfcd 0%, #1e9afe 74%); */
@@ -43,14 +43,14 @@
     margin-left: -130px;
     margin-top: -100px;
     height: 260px;
-    z-index: 1;
+    z-index: 11;
     transition: .8s;
     background: linear-gradient(180deg, #60dfcd 0%, #1e9afe 62%);
 }
 .navBtn button .soratraNavBtn{
     position: relative;
     color: white;
-    z-index: 2;
+    z-index: 12;
 }
 .navBtn button:hover .bgBtnNav{
     margin-top: -25px;
@@ -107,6 +107,9 @@ main.main{
 
 .main .mainContainer .landing .Landing-btn a button .soratraNavBtn{
     margin-top: 3px;
+}
+.main .mainContainer .landing .Landing-btn{
+    z-index: 3;
 }
 
 .main .mainContainer .landing .sary{

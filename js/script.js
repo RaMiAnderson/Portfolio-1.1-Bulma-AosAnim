@@ -1,4 +1,8 @@
-// Mouse animation
+// -------------- scroll animation --------------
+AOS.init({
+    easing: 'ease-in-out-sine'
+  });
+// -------------- Mouse animation --------------
 let coord = {x:0, y:0};
 let cercles = document.querySelectorAll(".circle");
 //learnui.design/tools/gradient-generator.html
@@ -6,7 +10,7 @@ const couleur = [
     "#60dfcd",
     "#59decf",
     "#45dbd3",
-    "#12d6da",
+    "#12d6da", 
     "#00d0e3",
     "#00c8ed",
     "#00bff6",
@@ -53,7 +57,7 @@ let cercleAnime = () => {
 cercleAnime();
 
 
-//Mouse hover Nav Bar 
+// -------------- Mouse hover Nav Bar --------------
 const dropDown_NavBar = document.querySelector('.nav-DropDown-Reseau');
 
 dropDown_NavBar.addEventListener('mouseover', (e) => {dropDown_NavBar.classList.add("is-active");});
