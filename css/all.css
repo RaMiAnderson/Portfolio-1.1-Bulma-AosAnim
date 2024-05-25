@@ -12,10 +12,8 @@
     --colorthemeDur : #1e9afe ;
     --jaune : #FFDF00;
     --white : #edf1f4;
+    --whiteBe : rgb(250, 250, 250);
 
-}
-body{
-    padding: 0 40px;
 }
 nav{
     padding: 0 40px;
